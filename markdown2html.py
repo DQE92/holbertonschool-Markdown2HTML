@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-    """
-    The above Python script is a command-line tool that converts a Markdown file to an HTML file.
-    """
+"""
+The above Python script is a command-line tool that converts a Markdown file to an HTML file.
+"""
 
 import sys
 import os
@@ -26,10 +26,11 @@ def main() -> None:
         sys.exit(1)
 
     sys.exit(0)
-
-    open(in_md, mode="r", encoding="utf-8")
     
-    
+    with open(in_md, mode="r", encoding="utf-8") as f:
+        contenu = f.read(in_md)
+        
     
 if __name__ == "__main__":
     main()
+
