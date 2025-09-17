@@ -62,7 +62,5 @@ def main() -> None:
         for html_line in co:
             o.write(html_line + "\n")
 
-    if 
-
 if __name__ == "__main__":
     main()
